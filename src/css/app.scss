@@ -1,0 +1,100 @@
+// app global css in SCSS form
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+* {
+  font-family: 'Noto Sans TC', 'Noto Sans SC', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  font-weight:bold;
+  margin: 0;
+  color: $major-font-color;
+}
+// min-width of tablet
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+    // margin: 0 auto; // ***
+  }
+}
+
+footer h3 {
+  font-size: 1.3em;
+  text-align: center;
+  color: $major-font-color;
+  margin: 0;
+  font-weight:bold;
+  white-space: nowrap;
+  padding: 0;
+}
+// min-width of tablet
+@media screen and (min-width: 768px) {
+  footer h3 {
+    font-size: 2em;
+  }
+}
+// min-width of desktop
+@media screen and (min-width: 1200px) {
+  footer h3 {
+    font-size: 1.8em;
+  }
+}
+
+footer a {
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  color: $minor-font-color;
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0;
+}
+// min-width of tablet
+@media screen and (min-width: 768px) {
+  footer a {
+    display: block;
+    font-size: 1.5em;
+  }
+}
+// min-width of desktop
+@media screen and (min-width: 1200px) {
+  footer a {
+    display: block;
+    font-size: 1.5em;
+  }
+}
+
+footer a .footerNav:hover {
+  text-decoration: underline;
+}
+// min-width of tablet
+@media screen and (min-width: 768px) {
+  footer a .footerNav:hover {
+    text-decoration: underline;
+  }
+}
+
+footer .segment {
+  width: 30%;
+  padding: 0;
+}
+
+footer .container {
+  width: 100%;
+  padding: 0;
+}
+
+
+// min-width of desktop
+@media screen and (min-width: 1200px) {
+  footer .separator {
+    width: 100%;
+  }
+  footer .footerNav:hover {
+    text-decoration: underline;
+  }
+}
